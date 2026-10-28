@@ -28,9 +28,15 @@ button.addEventListener("click", addProduct)
 
 function displayProducts(){
     productList.innerText = ""
+    
     for (let i = 0; i < groceries.length; i++) {
         let item = document.createElement("li")
+        
         item.innerHTML = groceries[i].name;
+        item.addEventListener("click", function(){
+        console.log("You clicked a product!")
+        })
+        
         productList.appendChild(item);
     }
 }
