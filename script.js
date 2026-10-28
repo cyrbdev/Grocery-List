@@ -36,7 +36,11 @@ function displayProducts(){
         item.addEventListener("click", function(){
         console.log("You clicked a product!")
         })
-        
+
         productList.appendChild(item);
     }
+}
+
+function crossItems(){
+    
 }
